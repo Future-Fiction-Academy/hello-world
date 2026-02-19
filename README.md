@@ -4,6 +4,20 @@ A tiny Flask app designed for students to practice **clone → edit → deploy**
 
 When deployed, visiting the Railway URL shows a styled "Hello, Railway!" page instantly.
 
+## One-click Deploy with Railway
+
+You can add a **Deploy on Railway** button that points to this repo.
+
+> Replace `<YOUR_GITHUB_USERNAME>` and `<YOUR_REPO_NAME>` with your actual GitHub values after you fork/copy this project.
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>)
+
+If your repo URL is `https://github.com/acme/hello-world`, your button link should be:
+
+```text
+https://railway.app/new/template?template=https://github.com/acme/hello-world
+```
+
 ## What's in this repo
 
 - `app.py` — simple Flask server with one route (`/`)
@@ -42,7 +56,7 @@ When deployed, visiting the Railway URL shows a styled "Hello, Railway!" page in
 
 5. Open http://localhost:5000
 
-## Deploy to Railway
+## Deploy to Railway (manual flow)
 
 1. Push this project to your GitHub repo.
 2. In Railway, click **New Project**.
