@@ -6,15 +6,41 @@ When deployed, visiting the Railway URL shows a styled "Hello, Railway!" page in
 
 ## One-click Deploy with Railway
 
-Click the button below to add this project to Railway automatically.
+Railway's old direct GitHub template URL format is deprecated, so this repo now documents the **official template flow**.
 
+### Use this repo as a template example
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Future-Fiction-Academy/hello-world)
+1. Go to Railway and sign in.
+2. Click **New Project** → **Deploy from GitHub repo**.
+3. Select `Future-Fiction-Academy/hello-world` (or your own repo).
+4. Deploy once so Railway creates the project.
+5. Open project **Settings**.
+6. Click **Generate Template from Project** (or **Create Template**).
+7. Copy your new template URL. It will look like:
 
-If you want to create your own Deploy on Railway button for another repo, use this format and replace the placeholders:
+   - `https://railway.app/new/template/<YOUR_TEMPLATE_ID>`
+   - or `https://railway.com/template/<YOUR_TEMPLATE_ID>`
+
+8. Replace the deploy button link with your template URL:
+
+```md
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.app/new/template/YOUR-TEMPLATE-ID-HERE)
+```
+
+Optional: append `?utm_source=github&utm_medium=button` for analytics.
+
+### Current button placeholder
+
+Update this link after you create your template ID:
+
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.app/new/template/YOUR-TEMPLATE-ID-HERE)
+
+If you want to publish it publicly later, use Railway Templates and click **Publish** so others can discover it from the Railway marketplace.
+
+If you want to create your own Deploy on Railway button for another project, use this format and replace the placeholder:
 
 ```text
-https://railway.app/new/template?template=https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>
+https://railway.app/new/template/<YOUR_TEMPLATE_ID>
 ```
 
 ## What's in this repo
