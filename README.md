@@ -1,47 +1,40 @@
-# Hello World Python App for Railway
+# Hello World — Python/Flask Starter for Vibe Coding
 
-A tiny Flask app designed for students to practice **clone → edit → deploy** workflows ("vibe coding") with Railway.
+A minimal Flask app designed to be your **starting point** for AI-assisted coding. Fork it, open it in a web-based AI coding tool, make your changes, then let Railway deploy automatically when you merge.
 
-When deployed, visiting the Railway URL shows a styled "Hello, Railway!" page instantly.
+---
 
-## One-click Deploy with Railway
+## The Workflow
 
-Railway's old direct GitHub template URL format is deprecated, so this repo now documents the **official template flow**.
+### 1 — Fork this repo
 
-### Use this repo as a template example
+Click the **Fork** button at the top-right of this page to create your own copy under your GitHub account.
 
-1. Go to Railway and sign in.
-2. Click **New Project** → **Deploy from GitHub repo**.
-3. Select `Future-Fiction-Academy/hello-world` (or your own repo).
-4. Deploy once so Railway creates the project.
-5. Open project **Settings**.
-6. Click **Generate Template from Project** (or **Create Template**).
-7. Copy your new template URL. It will look like:
+### 2 — Open in your AI coding tool
 
-   - `https://railway.app/new/template/<YOUR_TEMPLATE_ID>`
-   - or `https://railway.com/template/<YOUR_TEMPLATE_ID>`
+Open your fork in an AI coding tool:
 
-8. Replace the deploy button link with your template URL:
+- **Claude Code** (online/desktop)
+- **Codex** (online/desktop)
+- Other
 
-```md
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.app/new/template/YOUR-TEMPLATE-ID-HERE)
-```
+### 3 — Make your changes
 
-Optional: append `?utm_source=github&utm_medium=button` for analytics.
+Use the AI to modify the app however you like. Your changes will be saved to a new feature branch in your fork automatically.
 
-### Current button placeholder
+### 4 — Create a Pull Request
 
-Update this link after you create your template ID:
+When you're happy with your changes, open a Pull Request from your feature branch back to `main` on your fork.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/i-JXYT?referralCode=W6BgN8&utm_medium=integration&utm_source=template&utm_campaign=generic)
+### 5 — Review and Merge
 
-If you want to publish it publicly later, use Railway Templates and click **Publish** so others can discover it from the Railway marketplace.
+Review the PR — check the diff, leave a comment, get comfortable with the process — then merge it into `main`.
 
-If you want to create your own Deploy on Railway button for another project, use this format and replace the placeholder:
+### 6 — Railway deploys automatically
 
-```text
-https://railway.app/new/template/<YOUR_TEMPLATE_ID>
-```
+Merging to `main` triggers Railway to deploy your updated app. Visit your Railway URL to see the changes live.
+
+---
 
 ## What's in this repo
 
@@ -51,55 +44,37 @@ https://railway.app/new/template/<YOUR_TEMPLATE_ID>
 - `Procfile` — production start command
 - `railway.json` — Railway deployment config
 
-## Quick Start (Local)
+---
 
-1. Clone the repo:
+## Deploy to Railway (One-Click)
 
-   ```bash
-   git clone <your-repo-url>
-   cd hello-world
-   ```
+If you want to deploy this repo as-is before making any changes, use the button below:
 
-2. (Optional but recommended) create a virtual environment:
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/i-JXYT?referralCode=W6BgN8&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
+---
 
-3. Install dependencies:
+## Create Your Own "Deploy to Railway" Button
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+Once you've built something worth sharing, you can create a one-click deploy button for your own project.
 
-4. Run the app:
+1. Go to [Railway](https://railway.app) and sign in.
+2. Click **New Project** → **Deploy from GitHub repo** and select your repo.
+3. Deploy once so Railway creates the project.
+4. Open project **Settings**.
+5. Click **Generate Template from Project** (or **Create Template**).
+6. Copy your new template URL:
+   - `https://railway.app/new/template/<YOUR_TEMPLATE_ID>`
+   - or `https://railway.com/template/<YOUR_TEMPLATE_ID>`
+7. Add the button to your README:
 
-   ```bash
-   python app.py
-   ```
+```md
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.app/new/template/YOUR-TEMPLATE-ID-HERE)
+```
 
-5. Open http://localhost:5000
+Optional: append `?utm_source=github&utm_medium=button` for analytics.
 
-## Deploy to Railway (manual flow)
-
-1. Push this project to your GitHub repo.
-2. In Railway, click **New Project**.
-3. Choose **Deploy from GitHub repo**.
-4. Select this repository.
-5. Railway will detect Python and install `requirements.txt`.
-6. Railway starts the app using `railway.json` / `Procfile` with Gunicorn.
-7. Open the generated Railway domain from the service dashboard.
-
-You should immediately see the hello-world page.
-
-## Vibe Coding Practice Ideas
-
-- Change the hero text and emoji.
-- Add your name and a short bio.
-- Add another Flask route (e.g. `/about`).
-- Add a simple API endpoint returning JSON.
-- Experiment with styling and deploy updates.
+To make your template publicly discoverable, go to Railway Templates and click **Publish**.
 
 ---
 
