@@ -33,7 +33,7 @@ Optional: append `?utm_source=github&utm_medium=button` for analytics.
 
 Update this link after you create your template ID:
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.app/new/template/YOUR-TEMPLATE-ID-HERE)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/i-JXYT?referralCode=W6BgN8&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 If you want to publish it publicly later, use Railway Templates and click **Publish** so others can discover it from the Railway marketplace.
 
