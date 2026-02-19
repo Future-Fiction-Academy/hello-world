@@ -6,16 +6,15 @@ When deployed, visiting the Railway URL shows a styled "Hello, Railway!" page in
 
 ## One-click Deploy with Railway
 
-You can add a **Deploy on Railway** button that points to this repo.
+Click the button below to add this project to Railway automatically.
 
-> Replace `<YOUR_GITHUB_USERNAME>` and `<YOUR_REPO_NAME>` with your actual GitHub values after you fork/copy this project.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/Future-Fiction-Academy/hello-world)
 
-If your repo URL is `https://github.com/acme/hello-world`, your button link should be:
+If you want to create your own Deploy on Railway button for another repo, use this format and replace the placeholders:
 
 ```text
-https://railway.app/new/template?template=https://github.com/acme/hello-world
+https://railway.app/new/template?template=https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>
 ```
 
 ## What's in this repo
